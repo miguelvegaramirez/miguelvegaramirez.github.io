@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="device-width, initial-scale">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="shortcut icon" href="assets/icon.jpeg" />
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./css/stylesheet.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS (iconos) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Fuente Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Encabezado de la página-->
+    <header class="bg-light border-bottom">
+        <nav class="container navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand fw-bold">Tienda productos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./paginas/productos.html"
+                            target="_self">Productos</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="./paginas/contacto.html"
+                        target="_self">Contactenos</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/carrito.html">
+                            Carrito <i class="bi bi-cart"></i> (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-4">
+        <section class="text-center p-5 bg-light rounded">
+            <div class="itemsHero">
+                <h1 class="mb-3">Tienda de productos</h1>
+                <p class="lead">Productos de alta calidad a los mejores precios</p>
+                <a class="btn btn-primary btn-lg" href="#productosDest" target="_self">Ver productos
+                    destacados</a>
+            </div>
+        </section>
+        <!--Productos destacados-->
+        <section class="mt-5">
+            <h2 class="h4 mb-4" id="productosDest">Productos destacados</h2>
+            <!--Carrusel-->
+            <div class="carouselDestacados">
+                <div id="carouselProduct1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card h-100 text-center mb-3">
+                                <img class="card-img-center img-fluid" src="assets/producto.png" alt="Producto1">
+                                <div class="card-body cardBg">
+                                    <h5 class="card-title">Producto 1</h5>
+                                    <p class="card-text text-seccess fw-bold">$50000</p>
+                                    <a class="btn btn-outline-success btn-sm" href="paginas/productos.html">Ver
+                                        productos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card h-100 text-center mb-3">
+                                <img class="card-img-center img-fluid" src="assets/producto2.png" alt="Producto1">
+                                <div class="card-body cardBg">
+                                    <h5 class="card-title">Producto 1</h5>
+                                    <p class="card-text text-seccess fw-bold">$90000</p>
+                                    <a class="btn btn-outline-success btn-sm" href="paginas/productos.html">Ver
+                                        productos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card h-100 text-center mb-3">
+                                <img class="card-img-center img-fluid" src="assets/producto3.png" alt="Producto1">
+                                <div class="card-body cardBg">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text text-seccess fw-bold">$120000</p>
+                                    <a class="btn btn-outline-success btn-sm" href="paginas/productos.html">Ver
+                                        productos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card h-100 text-center mb-3">
+                                <img class="card-img-center img-fluid" src="assets/producto4.png" alt="Producto1">
+                                <div class="card-body cardBg">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text text-seccess fw-bold">$600000</p>
+                                    <a class="btn btn-outline-success btn-sm" href="paginas/productos.html">Ver
+                                        productos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy;2025 Tienda - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

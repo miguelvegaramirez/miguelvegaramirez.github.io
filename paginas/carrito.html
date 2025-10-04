@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="shortcut icon" href="../assets/icon.jpeg" />
+    <!-- <link rel="stylesheet" href="./css/stylesheet.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS (iconos) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Fuente Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Encabezado de la página-->
+    <header class="bg-light border-bottom">
+        <nav class="container navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand fw-bold">Tienda productos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html" target="_self">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html" target="_self">Productos</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="../paginas/contacto.html"
+                        target="_self">Contactenos</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../paginas/carrito.html">
+                            Carrito <i class="bi bi-cart"></i> (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Contenedor princpal de carrito-->
+
+    <main class="container my-4">
+        <!--Formulario de contacto-->
+        <h1 class="h3 mb-4">Tu carrito de compras</h1>
+        <div class="table-responsive">
+            <table class="table alingn-middle">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th class="text-end">Precio</th>
+                        <th class="text-center">Cantidad</th>
+                        <th class="text-end">Sub Total</th>
+                        <th aria-label=""></th>
+                    </tr>
+                <tbody id="cart-items">
+                    <!--Codigo js-->
+
+                </tbody>
+                </thead>
+            </table>
+        </div>
+        <div class="text-end">
+            <strong>Total: $ <span id="totalPrecioCarrito">0</span></strong>
+        </div>
+        <div class="mt-3 text-end">
+            <button class="btn btn-success" id="finalizarPedido">Finalizar Compra</button>
+        </div>
+        <p class="text-center my-5" style="display: none;" id="msjCarritoVacio">El carrito está vacio</p>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy;2025 Tienda - Todos los derechos reservados</p>
+    </footer>
+    <!-- Scripts JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

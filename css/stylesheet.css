@@ -1,0 +1,107 @@
+/* Fuente base y estilo global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; /* fondo claro general */
+  color: #212529; /* texto en color oscuro estándar */
+  margin: 0;
+}
+
+/* Encabezado / Navbar */
+header .navbar-brand {
+  font-size: 1.5rem;
+}
+header .nav-link {
+  margin-right: 1rem;
+}
+header .nav-link.active {
+  font-weight: 600; /* resalta la sección activa */
+}
+header .navbar-toggler {
+  border: none;
+}
+/*Estilos propios*/
+.formContact{
+  background: #f0f2f5;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.cardBg{
+  background: #eff1f3;
+}
+
+.msjAddCart{
+  padding: 0 0 0 15px;
+}
+
+
+/* Pie de página */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Sección Hero (Inicio) */
+main section.text-center {
+  background-image: url('../assets/descarga.png'); /* imagen de fondo del hero (ejemplo) */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  width: 100%;
+  height: 500px;
+}
+.itemsHero{
+  text-align: center;
+  align-items: center;
+}
+main section.text-center h1 {
+  font-weight: 600;
+}
+main section.text-center p.lead {
+  font-size: 1.25rem;
+}
+main section.text-center a.btn {
+  padding: 0.75rem 1.5rem;
+}
+
+/* Tarjetas de productos */
+.card-img-top {
+  max-height: 150px;
+  object-fit: cover;
+}
+.card-title {
+  font-weight: 600;
+}
+.card-text {
+  font-size: 1.1rem;
+}
+/*Carrusel*/
+.carouselDestacados{
+  margin: 0 auto;
+  width: 30%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* invierte el color, útil si quieres negro */
+}
+
+/* Elementos específicos de página de Productos */
+#add-to-cart-msg {
+  z-index: 9999; /* para que esté por encima de otros elementos */
+}
+
+/* Formulario de Contacto */
+#contact-form {
+  width: 100%; /* ancho máximo para que no sea muy largo en pantallas grandes */
+}
+#form-status {
+  font-weight: 600;
+}
+
+/* Responsive: ajustes para pantallas medianas/grandes */
+@media (min-width: 768px) {
+  header .nav-link {
+    margin-right: 1.5rem;
+  }
+  /* Puedes añadir más ajustes de diseño para escritorio aquí */
+}
