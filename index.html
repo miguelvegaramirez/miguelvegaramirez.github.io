@@ -113,6 +113,28 @@
                 </div>
         </section>
     </main>
+       <!-- ==================== Chatbot Widget ==================== -->
+   <!-- Botón flotante -->
+    <button class="btn btn-brand chatbot-fab" type="button" data-bs-toggle="offcanvas" data-bs-target="#chatbotOffcanvas" aria-controls="chatbotOffcanvas" aria-label="Abrir el asistente...">
+      <i class="bi bi-chat-dots-fill fs-5"></i>
+    </button>
+    <!-- Panel lateral Chatbot Embebido -->
+     <div class="offcanvas offcanvas-end chatbot-canvas" tabindex="-1" id="chatbotOffcanvas" aria-activedescendant="chatbotOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="chatbotOffcanvasLabel">
+          Asistente de MiTiendita
+        </h5>
+        <div class="d-flex gap-2 align-items-center">
+          <a id="chatbotOpenNew" class="btn btn-sm btn-outline-secundary" target="_blank" rel="noopener">Abrir en una nueva pestaña...</a>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+      </div>
+      <div class="offcanvas-body p-0">
+        <!-- Carga del Embebido -->
+         <iframe id="chatbotFrame" class="chatbot-frame" title="Chatbot"></iframe>
+      </div>
+     </div>
+<!-- ==================== /Chatbot Widget ==================== -->
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy;2025 Tienda - Todos los derechos reservados</p>
     </footer>
